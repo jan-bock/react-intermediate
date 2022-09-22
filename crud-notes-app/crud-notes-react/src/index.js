@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import WelcomeScreen from './WelcomeScreen';
+import WelcomeScreen from './Screens/WelcomeScreen';
+import CreateAccountScreen from './Screens/CreateAccountScreen';
+import PurchasePremiumScreen from './Screens/PurchasePremiumScreen';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -10,6 +12,10 @@ root.render(
     <Router>
         <Routes>
           <Route path="/" element={<WelcomeScreen />}/>
+          <Route path="/welcome" element={<WelcomeScreen />}/>
+          <Route path="/create-my-account" element={<CreateAccountScreen />}/>
+          <Route path="/purchase-premium" element={<PurchasePremiumScreen />}/>
+
         </Routes>
       </Router>
 );

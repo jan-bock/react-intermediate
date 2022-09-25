@@ -15,9 +15,9 @@ root.render(
         <Routes>
           <Route path="/" element={<WelcomeScreen />}/>
           <Route path="/welcome" element={<WelcomeScreen />}/>
-          <Route path="/create-my-account" element={<CreateAccountScreen />}/>
-          <Route path="/purchase-premium" element={<PurchasePremiumScreen />}/>
-          <Route path="/notes-homepage" element={<NotesHomepageScreen />}/>
+          <Route path="/create" element={<CreateAccountScreen />}/>
+          <Route path="/premium" element={<PurchasePremiumScreen />}/>
+          <Route path="/home" element={<NotesHomepageScreen />}/>
           <Route path="/edit-note" element={<EditNoteScreen />}/>
           <Route path="/my-profile" element={<ProfilePage />}/>
 

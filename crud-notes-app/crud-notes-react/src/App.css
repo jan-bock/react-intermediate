@@ -3,6 +3,12 @@ html {
     overflow: hidden;
 }
 
+.custom-font {
+    color: #595550;
+    font-family: Nunito;
+    font-weight: 700;
+}
+
 .notely-title {
     display: block;
     margin: auto;
@@ -75,4 +81,118 @@ html {
     letter-spacing: 0.04em;
     color: #D9614C;
     margin-top: 7%;
+}
+
+
+
+.input-headers {
+    color: #403B36;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.input-boxes {
+    display: block;
+    background: #FFFDFA;
+    border: 1px solid #F2E5D5;
+    border-radius: 12px;
+    width: 320px;
+    height: 20px;
+    padding: 19px 16px;
+    margin: auto;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.input-block {
+    padding-top: 5px;
+}
+
+.input-group {
+    padding-top: 10px;
+    margin-bottom: -5px;
+}
+
+
+
+
+
+
+.premium-list {
+    display: block;
+    text-align: left;
+    list-style: none;
+    line-height: 35px;
+    width: 90%;
+    margin: auto;
+    margin-left: -10px;
+    margin-top: 5%;
+}
+
+.check {
+    padding-right: 20px;
+}
+
+.premium-img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.premium-options-btn-group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: -5px;
+}
+
+.premium-btn {
+    border: none;
+    background-color: #FFFDFA;
+    border-radius: 16px;
+    width: 147px;
+    height: 147px;
+}
+.premium-btn:hover {
+    border: orange;
+    border-style: solid;
+    border-width: 5px;
+}
+.premium-btn:focus {
+    border: #F47F6B;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.premium-desc {
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.prem-desc-title {
+    color: #595550;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.prem-btn-price {
+    font-weight: 900;
+    font-family: Nunito;
+    color: #393633;
+}  
+
+#close-btn {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    border: none;;
+    background-color: none;
 }

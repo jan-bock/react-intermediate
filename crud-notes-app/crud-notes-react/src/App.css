@@ -1,0 +1,78 @@
+html {
+    background-color: #F8EEE2;
+    overflow: hidden;
+}
+
+.notely-title {
+    display: block;
+    margin: auto;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    width: 80px;
+    height: 23px;
+    color: #403B36;
+    margin-top: 20%;
+}
+
+#welcome-image {
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: auto;
+    margin-top: 45%;
+}
+
+.screen-title {
+    display: block;
+    margin: auto;
+    width: 308px;
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 900;
+    margin-top: 8%;
+}
+
+.app-default-font {
+    display: block;
+    margin: auto;
+    color: #595550;
+    width: 308px;
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.introduction-button-group {
+    display: block;
+    width: 319px;
+    height: 74px;
+    background: #D9614C;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.12em;
+    color: #FFFBFA;
+    margin-top: 15%;
+}
+
+.introduction-alt {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #D9614C;
+    margin-top: 7%;
+}

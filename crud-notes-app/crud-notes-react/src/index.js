@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import WelcomeScreen from './Screens/WelcomeScreen';
 import CreateAccountScreen from './Screens/CreateAccountScreen';
 import PurchasePremiumScreen from './Screens/PurchasePremiumScreen';

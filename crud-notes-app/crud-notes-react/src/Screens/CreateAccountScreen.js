@@ -5,7 +5,7 @@ import React from "react";
 function CreateAccountScreen() {
   return (
     <>
-      <h1>Notely</h1>
+      <h1 className="notely-title">Notely</h1>
       <h2>Create a free account</h2>
       <p>Join Notely for free. Create and share unlimited notes with your friends.</p>
 

@@ -5,7 +5,7 @@ import React from "react";
 function ProfilePage() {
   return (
     <>
-      <h1>Notely</h1>
+      <h1 className="notely-title">Notely</h1>
       <img placeholder="profile image" alt="alt text"/>
       <h2>Jan Bock</h2>
       <p>Edinburgh, United Kingdom</p>

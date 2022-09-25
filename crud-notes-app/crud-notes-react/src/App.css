@@ -1,0 +1,198 @@
+html {
+    background-color: #F8EEE2;
+    overflow: hidden;
+}
+
+.custom-font {
+    color: #595550;
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+.notely-title {
+    display: block;
+    margin: auto;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    width: 80px;
+    height: 23px;
+    color: #403B36;
+    margin-top: 20%;
+}
+
+#welcome-image {
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: auto;
+    margin-top: 45%;
+}
+
+.screen-title {
+    display: block;
+    margin: auto;
+    width: 308px;
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 900;
+    margin-top: 8%;
+}
+
+.app-default-font {
+    display: block;
+    margin: auto;
+    color: #595550;
+    width: 308px;
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.introduction-button-group {
+    display: block;
+    width: 319px;
+    height: 74px;
+    background: #D9614C;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.12em;
+    color: #FFFBFA;
+    margin-top: 15%;
+}
+
+.introduction-alt {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #D9614C;
+    margin-top: 7%;
+}
+
+
+
+.input-headers {
+    color: #403B36;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.input-boxes {
+    display: block;
+    background: #FFFDFA;
+    border: 1px solid #F2E5D5;
+    border-radius: 12px;
+    width: 320px;
+    height: 20px;
+    padding: 19px 16px;
+    margin: auto;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.input-block {
+    padding-top: 5px;
+}
+
+.input-group {
+    padding-top: 10px;
+    margin-bottom: -5px;
+}
+
+
+
+
+
+
+.premium-list {
+    display: block;
+    text-align: left;
+    list-style: none;
+    line-height: 35px;
+    width: 90%;
+    margin: auto;
+    margin-left: -10px;
+    margin-top: 5%;
+}
+
+.check {
+    padding-right: 20px;
+}
+
+.premium-img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.premium-options-btn-group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: -5px;
+}
+
+.premium-btn {
+    border: none;
+    background-color: #FFFDFA;
+    border-radius: 16px;
+    width: 147px;
+    height: 147px;
+}
+.premium-btn:hover {
+    border: orange;
+    border-style: solid;
+    border-width: 5px;
+}
+.premium-btn:focus {
+    border: #F47F6B;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.premium-desc {
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.prem-desc-title {
+    color: #595550;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.prem-btn-price {
+    font-weight: 900;
+    font-family: Nunito;
+    color: #393633;
+}  
+
+#close-btn {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    border: none;;
+    background-color: none;
+}

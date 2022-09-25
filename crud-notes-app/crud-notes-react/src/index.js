@@ -4,7 +4,10 @@ import './index.css';
 import WelcomeScreen from './Screens/WelcomeScreen';
 import CreateAccountScreen from './Screens/CreateAccountScreen';
 import PurchasePremiumScreen from './Screens/PurchasePremiumScreen';
+import NotesHomepageScreen from './Screens/NotesHomepageScreen';
+import ProfilePage from './Screens/ProfilePage';
 import reportWebVitals from './reportWebVitals';
+import EditNoteScreen from './Screens/EditNoteScreen';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,12 +18,12 @@ root.render(
           <Route path="/welcome" element={<WelcomeScreen />}/>
           <Route path="/create-my-account" element={<CreateAccountScreen />}/>
           <Route path="/purchase-premium" element={<PurchasePremiumScreen />}/>
+          <Route path="/notes-homepage" element={<NotesHomepageScreen />}/>
+          <Route path="/edit-note" element={<EditNoteScreen />}/>
+          <Route path="/my-profile" element={<ProfilePage />}/>
 
         </Routes>
       </Router>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

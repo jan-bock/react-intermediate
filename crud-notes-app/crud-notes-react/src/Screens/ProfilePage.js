@@ -20,7 +20,7 @@ function ProfilePage() {
         </li>
       </ul>
     </>
-  );
+  ); 
 }
 
 export default ProfilePage;

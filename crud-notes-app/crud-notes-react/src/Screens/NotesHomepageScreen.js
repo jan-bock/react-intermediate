@@ -17,7 +17,7 @@ const NotesHomepageScreen = () => {
   if (!notesPresentBoolean) {
     return (
       <>
-        <NoNotes />
+        <NoNotes />  
       </>
     );
   } else {

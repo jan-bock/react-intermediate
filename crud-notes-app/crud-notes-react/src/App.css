@@ -193,6 +193,49 @@ html {
     position: absolute;
     right: 20px;
     top: 25px;
-    border: none;;
-    background-color: none;
+    border: none;
+    background-color: #F8EEE2;
+}
+#close-btn:hover {
+    opacity: 25%;
+}
+#close-btn:focus {
+    opacity: 25%;
+}
+
+
+
+
+
+
+.all-notes-header {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 800;
+    color: #403B36;
+}
+.all-notes-top-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7%;
+}
+.all-notes-btn {
+    border: none;
+    border-color: none;
+    background-color: #F8EEE2;
+}
+#profile-icon {
+    margin-top: 10%;
+}
+.all-notes-img {
+    width: 265px;
+    height: auto;
+    margin-top: 50%;
+}
+.all-notes-desc {
+    width: 90VW;
+} 
+.create-note-btn {
+
 }

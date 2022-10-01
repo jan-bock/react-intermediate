@@ -1,7 +1,7 @@
 import "../../App.css";
 import AllNotesImg from "../../images/all-notes-page.png";
 
-const NoNotes = () => {
+const NoNotes = ( { addFirstNote } ) => {
   return (
     <>
         <p className="custom-font all-notes-header" id="profile-icon">profile</p>
@@ -13,7 +13,7 @@ const NoNotes = () => {
       <img className="premium-img all-notes-img" placeholder="shelf with random items" alt="all notes page" src={AllNotesImg}/>
       <h2 className="screen-title">Create your first note!</h2>
       <p className="app-default-font all-notes-desc">Add a note about anything (your thoughts on climate change, or your history essay) and share it witht the world.</p>
-      <button className="introduction-button-group create-note-btn">CREATE A NOTE</button>
+      <button className="introduction-button-group create-note-btn" onClick={addFirstNote}>CREATE A NOTE</button>
     </>
   );
 }

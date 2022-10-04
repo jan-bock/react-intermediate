@@ -1,23 +1,69 @@
 import "../App.css";
-import AllNotesImg from "../images/all-notes-page.png";
+import NoNotes from "../Components/NotesHomePageComponents/NoNotes.js";
+import NotesExist from "../Components/NotesHomePageComponents/NotesExist.js";
 
-import React from "react";
+import React, { useState } from "react";
 
 const NotesHomepageScreen = () => {
-  return (
-    <>
-        <p className="custom-font all-notes-header" id="profile-icon">profile</p>
-    <div className="all-notes-top-btns">
-        <button className="all-notes-btn">sort</button>
-        <button className="all-notes-btn custom-font all-notes-header">All Notes</button>
-        <button className="all-notes-btn">sear</button>
-    </div>
-      <img className="premium-img all-notes-img" placeholder="shelf with random items" alt="all notes page" src={AllNotesImg}/>
-      <h2 className="screen-title">Create your first note!</h2>
-      <p className="app-default-font all-notes-desc">Add a note about anything (your thoughts on climate change, or your history essay) and share it witht the world.</p>
-      <button className="introduction-button-group create-note-btn">CREATE A NOTE</button>
-    </>
-  );
-}
+  const [notesPresentBoolean, setNotesPresentBoolean] = useState(false);
+  const [notesArray, setNotesArray] = useState([]);
+
+  //On page load (useEffect), if notes are in localstorage, then setNotesPresentBoolean to true;
+  //On create-button click on NoNotes, create a card in NotesExist component, and set notesPresentBoolean to true;
+  //On new empty card card click OR any card click, go to edit that specific card screen;
+
+  //on create a Note click in NoNotes, append a new card in NotesHomepageScreen, and pass the new state to NotesExist component;
+
+  const addFirstNote = () => {
+    let firstNote = {
+      uid: getUniqueId,
+      title: "Title",
+      content: "Type your note here...",
+    };
+    setNotesArray([firstNote]);
+    setNotesPresentBoolean(true);
+  };
+
+  const getUniqueId = () => {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  };
+
+  const addAnotherNote = () => {
+    let newNote = {
+      uid: getUniqueId(),
+      title: "Title2",
+      content: "Type your note here...",
+    }
+    setNotesArray([...notesArray, newNote]);
+  }
+
+  const renderNotes = () => {
+    return notesArray.map((note) => {
+      return (
+        <div className="note" key={note.uid}>
+          <h3 className="note-title">{note.title}</h3>
+          <p className="note-content">{note.content}</p>
+        </div>
+      );
+    });
+  };
+
+  if (!notesPresentBoolean) {
+    return (
+      <>
+        {/* NoNotes does not render notes; it add the first note, and switches the component to NotesExist */}
+        <NoNotes addFirstNote={addFirstNote} />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <NotesExist renderNotes={renderNotes} notesArray={notesArray} addAnotherNote={addAnotherNote} />
+      </>
+    );
+  }
+};
 
 export default NotesHomepageScreen;

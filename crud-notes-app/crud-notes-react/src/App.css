@@ -236,6 +236,31 @@ html {
 .all-notes-desc {
     width: 90VW;
 } 
-.create-note-btn {
 
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 95%;
+    margin: 25px 10px 10px 10px;
+}
+.note {
+    display: block;
+    width: 40vw;
+    height: max-content;
+    max-height: 300px;
+    min-height: 150px;
+    background-color: white;
+    border-radius: 12px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.note-title {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.note-content {
+    padding-left: 15px;
+    padding-right: 15px;
 }

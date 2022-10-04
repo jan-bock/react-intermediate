@@ -24,20 +24,20 @@ const NotesHomepageScreen = () => {
     setNotesPresentBoolean(true);
   };
 
-  const addAnotherNote = () => {
-    let newNote = {
-      uid: getUniqueId,
-      title: "Title2",
-      content: "Type your note here...",
-    }
-    setNotesArray([...notesArray, newNote]);
-  }
-
   const getUniqueId = () => {
     return Math.floor((1 + Math.random()) * 0x10000)
       .toString(16)
       .substring(1);
   };
+
+  const addAnotherNote = () => {
+    let newNote = {
+      uid: getUniqueId(),
+      title: "Title2",
+      content: "Type your note here...",
+    }
+    setNotesArray([...notesArray, newNote]);
+  }
 
   const renderNotes = () => {
     return notesArray.map((note) => {

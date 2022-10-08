@@ -18,7 +18,7 @@ root.render(
           <Route path="/create" element={<CreateAccountScreen />}/>
           <Route path="/premium" element={<PurchasePremiumScreen />}/>
           <Route path="/home" element={<NotesHomepageScreen />}/>
-          <Route path="/edit-note" element={<EditNoteScreen />}/>
+          <Route path="/edit" element={<EditNoteScreen />}/>
           <Route path="/my-profile" element={<ProfilePage />}/>
 
         </Routes>

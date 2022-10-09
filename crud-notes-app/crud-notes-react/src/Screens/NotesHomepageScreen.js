@@ -3,10 +3,13 @@ import NoNotes from "../Components/NotesHomePageComponents/NoNotes.js";
 import NotesExist from "../Components/NotesHomePageComponents/NotesExist.js";
 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const NotesHomepageScreen = () => {
-  const [notesPresentBoolean, setNotesPresentBoolean] = useState(false);
+const NotesHomepageScreen = ({ liftDataToEditScreen }) => {
+  const [notesPresentBoolean, setNotesPresentBoolean] = useState(null);
   const [notesArray, setNotesArray] = useState([]);
+
+  const navigate = useNavigate();
 
   //On page load (useEffect), if notes are in localstorage, then setNotesPresentBoolean to true;
   //On create-button click on NoNotes, create a card in NotesExist component, and set notesPresentBoolean to true;
@@ -33,16 +36,25 @@ const NotesHomepageScreen = () => {
   const addAnotherNote = () => {
     let newNote = {
       uid: getUniqueId(),
-      title: "Title2",
+      title: "Untitled...",
       content: "Type your note here...",
     }
     setNotesArray([...notesArray, newNote]);
   }
 
+  const routeToEditNoteWithData = (uid, title, content) => {
+    //this function creates an array from the above, and passes it to lift data to edit screen
+    let data = [uid, title, content];
+    console.log(data)
+    liftDataToEditScreen(data);
+    navigate("/edit");
+  }
+
+  //how do i specify which is to be passed to edit note if i cant call it like this
   const renderNotes = () => {
     return notesArray.map((note) => {
       return (
-        <div className="note" key={note.uid}>
+        <div className="note" key={note.uid} onClick={() => routeToEditNoteWithData(note.uid, note.title, note.content)}> 
           <h3 className="note-title">{note.title}</h3>
           <p className="note-content">{note.content}</p>
         </div>
